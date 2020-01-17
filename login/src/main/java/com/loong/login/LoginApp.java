@@ -16,6 +16,7 @@ public class LoginApp extends BaseApp {
 
     @Override
     public void initModuleApp(Application application) {
+        // 将 AccountService 类的实例注册到 ServiceFactory
         ServiceFactory.getInstance().setAccountService(new AccountService());
     }
 
